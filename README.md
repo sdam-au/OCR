@@ -4,10 +4,6 @@
 
 The purpose of this repo and this document is to report on my attempt to do an optical character recognition (OCR) of archaeological reports using python. It is a challenging task, since some of the source pdfs are in Cyrillic and do not have a very good quality.
 
-## Metadata
-
-The data for this project are  scanned PDFs of  various archaeological reports, differing in language and quality.
-
 ## Authors
 
 * Vojtěch Kaše, Aarhus University/University of West Bohemia
