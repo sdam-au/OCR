@@ -200,7 +200,7 @@ test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(3, 3), colorspac
 
 test_imgs = [rect(img, [0.07, 0.57, 0.5, 1]) for img in test_imgs] # defined the area
 ```
-Already a very preliminary look at these output indicates that **zooming** actually means a lot of improvement. A zoom with matrix = (3,3) appears to produce the best results.
+Already a very preliminary look at these output indicates that **zooming** actually means a lot of improvement. A zoom with matrix = (2,2) appears to produce the best results.
 
 ### Morphiological transformations with CV2.
 
@@ -213,7 +213,7 @@ img = test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(3, 3), col
 Finally, I produced four variants of this image while employing the above mentioned transformations and on each of them applied the  `pytesseract.image_to_string(img, lang="bul")` method. 
 
 ```python
-img = test_imgs[4]
+img = test_imgs[3]
 
 imgs_transf = []
 # ORIG IMG
