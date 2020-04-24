@@ -247,17 +247,24 @@ for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosi
 
 
 
-## Other tools to consider...
+### Google Cloud Compute Engine
 
-### Google Vision + Google Cloud
+To proceed further, I started a project with a virtual machine instance on Google Cloud Plattform enabling me faster computing. After some configuration, combining the code from above, I was able to run there the script in file `data/ocr-cyr.py`. It takes pdfs files directly from one folder on sciencedata.dk and returns their textual content  to a different folder there as well (`OCR/outputs`). The files are structured as very simple jsons:
 
--   [cloud vision api with python and google cloud](https://codelabs.developers.google.com/codelabs/cloud-vision-api-python/index.html?index=..%2F..index#0) - detailed tutorial
-    
+```json
+{"page 1" : "recognazed text from first page", "page 2": "recognized text from second page", ...} 
+```
 
+To call it back into python, you can use `data/read_ocr_json.ipynb`:
 
-### GOCR
-* [GOCR](http://jocr.sourceforge.net): GOCR is an OCR (Optical Character Recognition) program, developed under the GNU Public License. It converts scanned images of text back to text files. [Joerg Schulenburg](http://www.uni-magdeburg.de/jschulen/) started the program, and was leading the team of developers on SF, and after 2010 still manages the package at a (very) low time base.
+```python
+import sddk
+conf = sddk.configure_session_and_url("SDAM_root", "648597@au.dk")
+ocr_dict = sddk.read_file("/SDAM_data/OCR/outputs/AOR'1973_1972.json", "dict", conf)
+ocr_dict.keys()
+>>> dict_keys(['page 1', 'page 2', 'page 3', 'page 4', 'page 5', ...])
+ocr_dict["page 6"]
+>>> 'П. ДЕТЕВ (ПЛОВДИВ)\n\nРАЗКОПКИ НА СЕЛИЩНАТА МОГИЛА "МАЛТЕПЕ"\nПРИ С....'         
+```
 
-
- ### ABBYY Fine Reader
-* perhaps the best known, but also commercia
+As expected, ocr analysis is a very time consuming process, even with a rather powerful virtual machine. To analyze 5 files in cyrilic took almost 1 hour.
