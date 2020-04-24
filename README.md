@@ -251,7 +251,7 @@ To proceed further, I started a project with a virtual machine instance on Googl
 {"page 1" : "recognazed text from first page", "page 2": "recognized text from second page", ...} 
 ```
 
-To call it back into python, you can use `data/read_ocr_json.ipynb`:
+To call it back into python, you can use `data/read_ocr_json.ipynb`. doing basically this:
 
 ```python
 import sddk
