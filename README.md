@@ -4,10 +4,6 @@
 
 The purpose of this repo and this document is to report on my attempt to do an optical character recognition (OCR) of archaeological reports using python. It is a challenging task, since some of the source pdfs are in Cyrillic and do not have a very good quality.
 
-## Metadata
-
-The data for this project are  scanned PDFs of  various archaeological reports, differing in language and quality.
-
 ## Authors
 
 * Vojtěch Kaše, Aarhus University/University of West Bohemia
@@ -267,4 +263,9 @@ ocr_dict["page 6"]
 >>> 'П. ДЕТЕВ (ПЛОВДИВ)\n\nРАЗКОПКИ НА СЕЛИЩНАТА МОГИЛА "МАЛТЕПЕ"\nПРИ С....'         
 ```
 
+<<<<<<< HEAD
 As expected, ocr analysis is a very time consuming process, even with a rather powerful virtual machine. To analyze 5 files in cyrilic took almost 1 hour.
+=======
+ ### ABBYY Fine Reader
+* perhaps the best known, but also commercia
+>>>>>>> 63c3e93f7783fa0edfeb2a3eca7de3b046114715
