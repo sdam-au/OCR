@@ -262,10 +262,4 @@ ocr_dict.keys()
 ocr_dict["page 6"]
 >>> 'П. ДЕТЕВ (ПЛОВДИВ)\n\nРАЗКОПКИ НА СЕЛИЩНАТА МОГИЛА "МАЛТЕПЕ"\nПРИ С....'         
 ```
-
-<<<<<<< HEAD
 As expected, ocr analysis is a very time consuming process, even with a rather powerful virtual machine. To analyze 5 files in cyrilic took almost 1 hour.
-=======
- ### ABBYY Fine Reader
-* perhaps the best known, but also commercia
->>>>>>> 63c3e93f7783fa0edfeb2a3eca7de3b046114715
