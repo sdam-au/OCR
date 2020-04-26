@@ -344,7 +344,9 @@ $ sudo apt-get install -y libsm6 libxext6 libxrender-dev
 $ pip3 install beautifulsoup4
 ```
 
-### Run Python 3 and use the script
+
+
+### Run Python 3 and use the script
 
 Now we can test whether we are actually able to call all these packages within Python 3. Open it by:
 
