@@ -443,4 +443,6 @@ Subsequently, it lists all pdf files in the directory you choose and prints out 
 > 2020-04-26 09:02:13.878638 ended ocr analysis of Adams1965_LandBehindBagdad.pdf and saved it to sciencedata.dk
 ```
 
-The outputs are in `SDAM_root/SDAM_data/OCR/outputs`. As we inspect them , these results are from sufficient. It seems that we have to play with the "morphological transformations" for each file independently. 
+The outputs are in `SDAM_root/SDAM_data/OCR/outputs`. As we inspect them , these results are from sufficient. It seems that we have to play with the "morphological transformations" for each file independently.
+
+ 
