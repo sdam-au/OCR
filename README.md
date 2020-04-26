@@ -243,29 +243,204 @@ for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosi
 
 
 
-### Google Cloud Compute Engine
+### OCR with Tesseract using Google Cloud Compute Engine
 
-To proceed further, I started a project with a virtual machine instance on Google Cloud Plattform enabling me faster computing. After some configuration, combining the code from above, I was able to run there the script in file `data/ocr-cyr.py`. It takes pdfs files directly from one folder on sciencedata.dk and returns their textual content  to a different folder there as well (`OCR/outputs`). The files are structured as very simple jsons:
+To proceed further, I started a project with a virtual machine instance on Google Cloud Platform enabling me faster computing. You can configure your virtual machine instance on GCP in many different ways. Here I describe my configuration of a machine running Linux Ubuntu and Python 3.7+.
 
-```json
-{"page 1" : "recognazed text from first page", "page 2": "recognized text from second page", ...} 
+First, you have to go to `console.cloud.google.com` and create a project.
+
+Within a project, you go to `Compute Engine` part of the platform and the section `VM instances`. Here you can either return to an instance you used in the past (Even if an instance is stopped, it still maintains your data in its memory), or to create a new one.
+
+**Region**
+
+Creating a new instance, there are dozens of different options and their combinations. The first important thing is to choose `Region` and `Zone` for your machine. It basically means to choose from places where Google has physically located its servers (I am not sure to what extent these overlap with locations of google data centres). For my first experiment, I setup region to `europe-west3 (Frankfurt`). However, using this setting, I was not allowed to use the most powerful machines on the list. Therefore, in my second try, I chose `europe-north1 (Finland)`. 
+
+**Machine configuration**
+
+In the following section, at first you have to choose from a `Machine family`, whether you want a `General-purpose` or a `Memory-optimized` machine. [Here](https://cloud.google.com/compute/docs/machine-types) is their list. Taken together, the choice of `Region` and `Machine type` determines what you see below as available `Series` and `Machine type`: If you choose `us-central1 (Iowa)+Memory-optimized`, the most powerful option on the list is `m1-megamem-96 (96 vCPUm 1.4 TB memory)`, but if you choose `europe-north1 (Finland)+Memory-optimized`,  the most powerful option on the list is `m1-ultramem-40 (40 vCPU, 961 GB memory).
+
+However, it seems that an ordinary user is not allowed to use these most powerful machines. Trying to use `megamem-96`, I was rejected with this warning:  "Quota 'CPUS_ALL_REGIONS' exceeded. Limit: 12.0 globally."
+
+Therefore, I turned to `n1-highmem-8 (8 vCPU, 52 GB memory)`. (In a previous session, I had `n1-standard-8 (8 vCPU, 30 GB memory)`, I am not sure how big measurable difference this can be for my tasks, if any.)
+
+**Boot disk**
+
+As a next step, you have to choose a Boot disk. Since I faced some problems with upgrading Python 3 coming with older Linux distributions (after I made an upgrade, the default Py3 remained unchanged), I decided for Ubuntu 20.04 LTS, which contains Python 3.8+ by default (and not Python 3.4 or 3.5 as older Ubuntus). 
+
+Last important option is **Firewall** to allow specific network traffic from the Internet. I always allow both HTTP and HTTPS traffic.
+
+**System configuration**.
+
+Once you have an instance, the most straigtforward way to use it is via `SSH` (= secure shell) associated with it.
+
+First, I had to inspect my Python 3 version. Since using Ubuntu 20.04, it should be 3.8+:
+
+```bash
+$ python3 --version
+>>> Python 3.8.2
 ```
 
-To call it back into python, you can use `data/read_ocr_json.ipynb`:
+Next, we have to install pip3, to be able to install packages for python3. However, this is not so straigtforward here, because `apt` is not able to locate it at first. So you have to update and upgrade apt at first:
+
+```bash
+$ sudo apt update
+$ sudo apt upgrade
+$ sudo apt install python3-pip
+```
+
+Now you have only base Python, so you have to install all the important packages like numpy, pandas, matplotlib etc.
+
+```bash
+$ pip3 install pandas matplotlib
+```
+
+What is crucial, we also have to install our `sddk` package:
+
+```bash
+$ pip3 install sddk
+```
+
+Next, we can install the software crucial for our task at hands, i.e. OCR analysis of pdf documents.
+
+1) tesseract
+
+```bash
+$ sudo apt install tesseract-ocr
+```
+
+2) individual languages:
+
+```bash
+$ sudo apt install tesseract-ocr-bul tesseract-ocr-ces tesseract-ocr-grc
+```
+
+3) python bindings:
+
+```bash
+$ pip3 install pytesseract
+```
+
+4) pymupdf
+
+```bash
+$ pip3 install pymupdf
+```
+
+5) open cv2 (opencv-python)
+
+```bash
+$ pip3 install opencv-python
+```
+
+To make it functional, you also need:
+
+```bash
+$ sudo apt-get install -y libsm6 libxext6 libxrender-dev
+```
+
+6) Beautiful Soup 
+
+```bash
+$ pip3 install beautifulsoup4
+```
+
+### Run Python 3 and use the script
+
+Now we can test whether we are actually able to call all these packages within Python 3. Open it by:
+
+```bash
+$ python3
+```
+
+In python, test this:
 
 ```python
-import sddk
-conf = sddk.configure_session_and_url("SDAM_root", "648597@au.dk")
-ocr_dict = sddk.read_file("/SDAM_data/OCR/outputs/AOR'1973_1972.json", "dict", conf)
-ocr_dict.keys()
->>> dict_keys(['page 1', 'page 2', 'page 3', 'page 4', 'page 5', ...])
-ocr_dict["page 6"]
->>> 'П. ДЕТЕВ (ПЛОВДИВ)\n\nРАЗКОПКИ НА СЕЛИЩНАТА МОГИЛА "МАЛТЕПЕ"\nПРИ С....'         
+>>> import sddk, fitz, pytesseract, cv2
 ```
 
-<<<<<<< HEAD
-As expected, ocr analysis is a very time consuming process, even with a rather powerful virtual machine. To analyze 5 files in cyrilic took almost 1 hour.
-=======
- ### ABBYY Fine Reader
-* perhaps the best known, but also commercia
->>>>>>> 63c3e93f7783fa0edfeb2a3eca7de3b046114715
+To quit python console, run `quit()`.
+
+
+
+Having our environment fully functional, we can run there any script using the tools we installed. Instead of trying to figure out how to upload these scripts programmatically, we can just create a new file and edit its content using `nano` text editor (in my former effort, `nano` was already installed, but this time I had to install it on my own: `$ sudo apt-get install nano`). 
+
+```bash
+$ nano ocr_cyr.py
+```
+
+Here is the script I used here:
+
+```python
+### binding for tesseract:
+import pytesseract
+### computer vision:
+import cv2
+### computer vision relies to a substantial extent on numpy arrays
+import numpy as np
+### PyMuPDF is called fitz:
+import fitz
+### to plot pages and everything else:
+from matplotlib import pyplot as plt
+### to import data from sciencedata.dk
+import sddk
+from bs4 import BeautifulSoup
+from datetime import datetime
+### configure sddk session
+conf = sddk.configure_session_and_url("SDAM_root", "648597@au.dk")
+
+directory = input("you are in " + conf[1] + ", specify subdirectory: ")
+language = input("specify language (use '+' for more languages): ")
+
+resp = conf[0].get(conf[1] + directory)
+soup = BeautifulSoup(resp.content)
+soup
+filenames = []
+for a in soup.find_all("a"):
+    a_str = str(a.get_text())
+    if ".pdf" in a_str:
+        filenames.append(a_str)
+print("files in the folder: ")
+print(filenames)
+def pix2np(pix):
+    im = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.h, pix.w, pix.n)
+    #im = np.ascontiguousarray(im[..., [2, 1, 0]])  # rgb to bgr
+    return im
+def get_text(doc):
+        i = 1
+        pages = ""
+        for page in doc: ### or you can specify: doc(start, end, step):
+            pix = page.getPixmap(matrix = fitz.Matrix(2, 2), colorspace="csGRAY")  # try "csGRAY"
+            img = pix2np(pix)
+            kernel = np.ones((2, 2), np.uint8)
+            img_er = cv2.erode(img, kernel, iterations=1)
+            txt = pytesseract.image_to_string(img_er, lang=language) + "\n\n[end-of-page" + str(i) + "]\n\n"
+            pages += txt 
+            i = i+1
+        return pages
+
+for filename in filenames: 
+    print(datetime.now(), "started to read " + filename)
+    resp = conf[0].get(conf[1] + directory + filename)
+    doc = fitz.open(stream=resp.content, filetype="pdf")
+    pages_str = get_text(doc)
+    filepathname = "/SDAM_data/OCR/outputs/" + filename.rpartition(".")[0] + ".txt"
+    conf[0].put(conf[1] + filepathname, data=pages_str.encode('utf-8'))
+    print(datetime.now(), "ended ocr analysis of " + filename + " and saved it to sciencedata.dk")
+```
+
+The script interactively ask you for several inputs:
+
+* sciencedata.dk username (format '123456@au.dk')
+* sciencedata.dk password
+* specification of subdirectory (by default, you are in "SDAM_root")
+* language of the analysis (e.g. "bul" or "bul+eng")
+
+Subsequently, it lists all pdf files in the directory you choose and prints out whenever it starts and end to work on a file:
+
+```bash
+> files in the folder: ['Adams1965_LandBehindBagdad.pdf', 'Cherry1991_Keos.pdf', 'Isaac1986_GreekSettlementsAncientThrace_best.pdf']
+> 2020-04-26 08:53:19.048385 started to read Adams1965_LandBehindBagdad.pdf
+> 2020-04-26 09:02:13.878638 ended ocr analysis of Adams1965_LandBehindBagdad.pdf and saved it to sciencedata.dk
+```
+
+The outputs are in `SDAM_root/SDAM_data/OCR/outputs`. As we inspect them , these results are from sufficient. It seems that we have to play with the "morphological transformations" for each file independently. 
