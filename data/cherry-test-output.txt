@@ -1,0 +1,1176 @@
+CHAPTER 5
+
+ 
+
+Gazetteer of Archaeological Sites
+
+R.F. Sutton, Jr., J. F. Cherry, J. L. Davis, and E. Mantzourani
+(with Appendixes by E. Mantzourani and L. Missitzis)
+
+ULL ACCOUNTS OF individual sites and associ-
+ated finds are presented below. The following in-
+formation is included for each:
+Site Number and Name of Site (heading). Although an attempt was made to leam local toponyms
+for each site, in many cases this was impossible, and a general name applied to the entire region in
+which the site lies, or the name of a nearby location, has been used instead. Georgiou and Faraklas
+(1985:214, ill. 1) have published a reliable toponymic map of the island, but place-names of
+northwest Keos that are used in this chapter may be found on figure 2.2.
+
+Site Location (line 1). Given as an 8-figure grid reference to the British Army map of the island:
+1:50,000 AEGEAN series (Geographical Section, General Staff no. 4468), published by the
+British War Office in 1944. (Grid reference is preceded by a K as a designation for the map sheet
+for Keos.)
+
+Site Size (line 1). Calculated in hectares, using the length of transects walked (if available) at the
+time of initial site collection and corrected, if necessary, by subsequent autopsy (see chap. 2).
+
+Date (line 2). Single periods represented by definitely datable artifacts; parentheses indicate that
+fewer than 3 artifacts of a given date were noted. Included are both collected finds and those
+recorded but not collected in subsequent revisits to the sites.
+
+Ceramic Summary (line 3). Semiquantitative assessment of total number of dated potsherds and
+other ceramic finds from the site. Fragments that join or that obviously belong to the same pot are
+counted only once. In a very few cases, it is possible that a piece may belong to more than one
+category and, if so, it has been included in each. The number of artifacts possibly of a given date
+is in parentheses. Both collected finds and those observed in revisits are considered. A plus sign
+(+) indicates the presence of more than the specified number of artifacts.
+
+Lithic Summary (line 4). Number of lithic finds assignable to particular periods.
+
+[end-of-page1]
+
+Background and Data
+
+ 
+
+Site Description. Location, current land use, overall visibility, architectural features, and the location of artifacts
+of various dates (if concentrations could be recognized).
+
+Presentation of Finds. Pottery, lithics, and other artifacts are described at the end of each site entry (catalog
+number, artifact type, illustration, measurements in m, physical description, date, and references). Of the
+ceramics, only a representative selection is presented fully; a sample of other sherds has been described
+summarily. Unless otherwise indicated, all finds are in the care of the Archaeological Museum of Keos in Chora
+(Toulis). In other chapters of this volume, individual artifacts have been referenced by the site and catalog number,
+separated by a dash (e.g., 1-1), or, in the case of uncataloged picces, by the site number followed immediately by
+an asterisk (¢.g., 1%). Artifacts not found on sites have been assigned to a series of off-site (OS) finds. Individual
+drawings in figures 5.1-15 are grouped by type and shape, roughly as they are discussed in chapters 6, 11, and 18.
+We realize that this format may occasionally inconvenience the reader who wishes to locate an individual sherd
+quickly or to gain an impression of all the finds from a particular site; but we hope that it has the positive
+convenience of providing an overview, at a glance, of the range of ceramics of various types and dates represented
+within the whole survey area.
+
+ 
+
+Abbreviations
+
+For abbreviations of publications referenced by short titles and for chronological periods, see the list at the
+end of this volume. Several additional special abbreviations are used only in this chapter:
+
+ARS African Red-Slip ware
+bg Black-glazed
+CRM Coarse red micaceous fabric (probably local to Keos)
+Hayes Form Late Roman vase form as defined in Hayes 1972
+Howland Type Lamp types as defined in Howland 1958
+Peacock and Williams Class Late Roman amphora types as defined in Peacock and
+Williams 1986
+
+Pnyx Type Loom weight type as defined in Davidson and Thompson 1943
+PRS Phocacan Red-Slip ware
+SRM Semi-fine red micaceous fabric (probably local to Keos)
+S/T Amphora Storage and Transport Amphora
+
+Acknowledgments
+
+Many scholars have contributed to the compilation of this catalog. All artifacts were initially described and
+assigned preliminary dates in the summer of 1983 by Cherry, Davis, and Mantzourani. The following summer,
+material of the historic periods was studied by Robert F. Sutton, Jr., and also examined by Peter J. Callaghan and
+John W. Hayes; the prehistoric finds were reviewed by Carol Hershenson and David Wilson. With the
+considerable benefit of their expert advice, catalog descriptions were prepared and the periods of occupation at
+each site were reconsidered. During the winter of 1984-85, Carolyn Koehler kindly examined drawings and
+photographs of several amphorae and helped date them more securely. Alan Johnston generously studied a
+drawing and photograph of 71-5. All stone finds have been reviewed by Robin Torrence, who prepared
+descriptions for inclusion in this chapter. Coins were initially inspected (uncleaned) in the summer of 1984 and
+later taken to Athens for conservation and final identification (see app. 5.1). Comments by Lambros Missitzis on
+a photograph of a 17th-century inscription from Site 29 constitute appendix 5.2. The assembling of chapter 5 has
+been greatly facilitated by the establishment of a computer file listing all survey finds, their location, date, and
+nature; Susan E. Alcock was instrumental in its composition.
+
+70
+
+ 
+
+1. Xyla
+
+K84900516; approx. 0.1
+
+ECyc; (A); (C): (HL)
+
+ECyc 10(124):G-A 1;A 1; A-C4(2): C2(3+); A-HL
+4+ HL 1
+
+BA(21)
+
+A low-density scatter of artifacts on the crest and slopes
+
+of a NW-SE ridge immediately above the main dirt road
+
+from Koressia, approximately 850 m NE of Xyla Bay.
+
+The finds are concentrated around a modem stone caim
+
+and goat shed, to the N and SE of which are preserved
+
+traces of (apparently ancient) walls. Abandoned ter-
+races; good visibility. Pottery of the historical periods
+was most common in the SE (upslope) parts of the site
+
+and may, in large part, be slope wash from Site 2.
+
+POTTERY
+
+Prehistoric
+
+1-1.  Bowl or Saucer? (fig. 5.1). Rim sherd. Semi-coarse
+gray micaceous fabric. ECyc?
+
+1-2.  JarorBowl(fig.5.1). Rim sherd. CRM fabric. Relief
+band withdiagonal slashes beneath rim outside. ECyc.
+
+1-3.  Jar (fig. 5.1). Rim sherd. Coarse reddish-orange mi-
+caceous fabric; very wom. Relief band with diagonal
+incisions. ECyc.
+
+1-4.  Shape Uncertain (fig. 5.1). Vertical strap handle.
+Very coarse reddish-orange micaceous fabric; gray
+core; very worn. Herringbone and diagonally incised
+relief bands. ECyc.
+
+1-5.  Shape Uncertain. Flattened horizontal handle. Coarse
+orangish-red micaceous fabric; very wom. ECyc?
+
+1-6.  Shape Uncertain. Flartened horizontal handle. Smaller
+than 1-5. Coarse orangish-red micaceous fabric; very
+wom. ECyc?
+
+1-7.  Shape Uncertain (fig. 5.1). Horizontal handle; dis-
+tinct ridge along the outer edge. Coarse gritty orangish-
+red fabric; gray core. ECyc.
+
+1-8.  Shape Uncertain (fig. 5.1). Body sherd. CRM fabric;
+gray at core. Applied pellet and traces of incision.
+ECyc.
+
+1-9.  Shape Uncertain. Body sherd. Coarse orangish-red
+micaceous fabric. Parts of two parallel relief bands,
+diagonally incised. ECyc.
+
+1-10. Shape Uncertain. Body sherd; from shoulder? Coarse
+reddish-brown micaceous fabric; very wom. Two
+parallel relief bands; no trace of incision. ECyc; cf. J.
+L. Caskey 1972: B75, C2.
+
+1-11. Shape Uncertain. Body sherd. Semi-coarse gray mi-
+caceous fabric; inside surface not preserved. Parallel
+diagonally incised relief bands added in finer clay.
+ECyc.
+
+e Gazerteer of Archaeological Sites
+
+1-12. Shape Uncertain (fig. 5.1). Body sherd. Coarse red-
+dish-orange micaceous fabric; gray core; traces of
+red slip. Two applied pellets with herringbone in-
+cised bands in low relief. ECyc.
+
+1-13. Shape Uncertain. Body sherd. CRM fabric; gray
+core; very worn. Parts of five parallel (plain?) relief
+bands. ECyc.
+
+1-14. Shape Uncertain (fig. 5.1). Large thin lug handle;
+outer edge and one side preserved; very wom. Coarse
+orangish-red micaceous fabric; gray core.
+
+Among the uncataloged pottery are sherds possibly
+from ECyc saucers or bowls with incurving rims.
+
+Archaic to Hellenistic
+
+1-15. Closed Shape (fig. 5.2). Rim sherd: wom. D. est.
+0.11. Fine hard reddish-brown fabric, paler at surface
+with a purplish cast; Laconian? Dullish bg on top and
+inside; no bg preserved outside. A-C.
+
+1-16. Skyphos (Corinthian type?) (fig. 5.3). Body sherd;
+burnt? Fine Attic? Red to light red outside; pinkish-
+gray to light reddish-brown inside. Flaking reddish
+bg inside; outside, bg below and above a red band
+(miltos on a reserved area?) with two thin gray (bumt
+added red?) bands. 6th-5th century Be; cf. Agora
+XIL:81-87.
+
+1-17. Kylix (fig. 5.3). Foot fragment; bumt? D. est. 0.08,
+Fine pink to light reddish-brown fabric; Attic? Glossy
+bg outside and on underfoot; vertical exterior sur-
+faces reserved. Late 6th-early 5th century Be; cf.
+Agora XII: no. 398.
+
+1-18. Pithos (fig. 5.9). Body sherd from shoulder. SRM
+with gray core. Applied collar at join between neck
+and body. A-C?; cf. Agora XII: no. 1520, pl. 66.
+
+1-19. Lekane (fig. 5.11). Rim and stump of handle. D. est.
+0.32. CRM with gray core; smoothed outside. Ca.
+3rd century Bc.
+
+1-20. Lopas Lid (fig. 5.12). Body sherd. Domed with cen
+tral pinched-up knob. CRM cookware. Sth century
+8¢; of. Agora XII: fig. 18, nos. 1962, 1963, 1974,
+1978, etc., and pp. 227, 228.
+
+Among uncataloged sherds are bg fragments including
+an A-C skyphos handle, an A kylix base, and a sherd
+from a large closed vessel (G or A).
+
+    
+
+Date Uncertain
+
+1-21. Bowl (fig. 5.14). Rim sherd. D. est. 0.14. CRM; very
+worm,
+
+CHIPPED STONE
+
+21 unretouched artifacts; obsidian (fig. 7.4). Prehistoric
+(BA?).
+
+nn
+
+[end-of-page2]
+
+2. Xyla
+
+K85060502; approx. 1.8
+
+A; C; MByz
+
+A3(3); A-C9 (4+); A-HL6(1): C6(11+); C-HL 7+
+(1); C-LR 3+; R-Byz (3); MByz 3 (1); T (1+);
+Mod (1)
+
+BA (66); A-LR (1)
+
+A high-density scatter of artifacts on top of the main
+ridge which borders the Xyla streambed on the N; finds
+are concentrated on the NW slope of the ridge between
+two parallel ridges which run NW to the sea (Site 1 ison
+the easternmost of these, approximately 150 m away).
+Bare rock outcroppings, some abandoned terraces, and
+scattered low bushes; very good visibility. Just beneath
+the ridge top on the NW slope, above a modemn wire-
+fenced enclosure with metal gates, are the foundations
+ofarectangular rower, at least8.5x 11.6m, built of large
+undressed blocks (fig. 5.16). Parts of the N, S, and S
+walls are preserved (the latter used as the foundation for
+amodem field wall). Near the NE comer of the modern
+enclosure is a rock-cut cistem with two domed cham-
+bers; in one, a pillar of rock was left to support the roof.
+‘Traces of waterproof plaster remain on the walls. NE of
+the tower foundations, approximately 50m, isamodern
+pillarstanding inthe middle of a roughly circularmound
+of rubble, perhaps the remains of a collapsed building.
+Most obsidian from the site was recovered nearby, on
+the ridge top. S of the tower on the edge of the ridge,
+overlooking the streambed and bay of Xyla, is a very
+small tower (approximately 2 m square), preserved
+three storiestoaheight of 2.5 m (fig. 4.3). Each floor has
+its own door facing S: the ground and second floorhave
+windows, facing W, N, and E, and facing W, respec-
+tively. Slabs projecting S provide steps up to the third
+floor. All pottery found in the vicinity is perhaps of the
+19th century, and the tower is probably a vigla (i.e., a
+coastal watchtower), intended to relay news of ap-
+proaching pirates.
+
+References: Georgiou and Faraklas 1985: site 12.02;
+Welter 1954:88, no. 7.
+
+POTTERY
+
+Archaic to Roman
+
+2-1.  Lekythos (fig.5.2). Lower body; burnt? Fine light red
+fabric. Lower part covered with thin bg. 530-400 sc.
+22, Skyphos(fig.5.3). Base; burnt. D. est. 0.08. Fine Attic
+fabric. Glossy bg inside and out; reserved bearing
+surface and underfoot, the latter with miltos. Mid-6th
+
+72
+
+ 
+
+Background and Data
+
+23.
+
+25,
+
+2:6.
+
+27,
+
+28.
+
+2:9.
+
+2-10.
+
+2-11.
+
+212,
+
+2-13.
+
+2-14.
+
+2-15.
+
+ 
+
+to mid-5th century sc; cf. Agora XII: nos. 334-342,
+360-362.
+
+Skyphos (fig.5.3). Base sherd; burnt. D. est. 0.07. Fine
+Attic fabric. Bg inside and out, thin and reddish in
+places; reserved bearing surface and underfoot, the
+latter with miltos. Sthcentury 6c; cf. Agora XII: fig. 4,
+nos. 336, 342.
+
+Skyphos? (fig. 5.3). Body sherd; burnt? Fine soft
+Corinthian fabric, pink to light brown. Mottled red-
+dish bg inside; outside, a reserve band with widely
+spaced rays, framed above by a thin red band on bg.
+6th-early 5th century be; cf. Corinth XIII: nos. 156-
+4,159-11,265-1.
+
+Kantharos. Handle fragment; flat spur level with rim.
+Fine Attic fabric. Glossy bg with brown spots. 4th
+century 8c; cf. Agora XI1:122, pl. 29, fig. 7.
+
+SIT Amphora (fig. 5.6). Toe; burnt. Hard, sandy,
+coarse pinkish-buff fabric. C?-early HL?; cf. Vari:
+no. 130; J. K. Anderson 1954:176, no. 274n, o, p.
+SIT Amphora (fig. 5.5). Toe fragment. Coarse red-
+dish-yellow fabric with medium-sized white inclu-
+sions; Chian? Late C-HL? (4th-3rd century 8c); cf. J.
+K. Anderson 1954:175, no. 2701
+
+SIT Amphora or Hydria? (fig. 5.4). Body sherd from
+base of neck; burnt? Corinthian coarse ware. Lower
+parts of the separately made neck of possibly a
+Corinthian Type Aamphora. A: cf. Corinth VIL2: pl.
+110 profiles on left, e.g.. nos. An 305, 306.
+
+Closed (?) Shape (fig. 5.7). Base; bumt. D. est. 0.14.
+Hard sandy yellowish-red Attic fabric. Thin streaky
+bg wash inside; reserved outside. A.
+
+Beehive (fig. 5.9). Rim sherd. D. est. 0.34. SRM
+fabric; interior combed vertically. C-LR.
+
+Lekane (fig. 5.10). Rim sherd; bumnt? Fine slightly
+sandy pink fabric: Attichousehold ware discolored by
+burning? Glossy bg inside and on top of rim. C (Sth
+century 8¢?); cf. Agora XII: nos. 1793, 1805, 1806,
+1809.
+
+Lekane (fig. 5.10). Rim sherd and handle (arching;
+attached beneath rim). D. est. 0.40 (distorted by
+handle?). Household fabric; colors varying from pink
+to brown and gray. Mid-6th to 4th century Bc; cf.
+Agora XIL: pl. 86 and pp. 214-216.
+
+Lekane (fig. 5.11). Rim sherd; edge chipped; wom.
+Attic household ware. Dull reddish-brown bg on all
+surfaces (except vertical edge of rim?) Probably A
+rather than C; cf. Agora VIIL: nos. 123, 124,pl. 7, p.
+46.
+
+Lekane (fig. 5.10). Rim sherd. D. est. 0.50. CRM
+fabric; gray core. A-C (6th-Sth century Bc?); cf.
+Agora XII: nos. 1785, 1786, 1799.
+
+Lekane (fig. 5.11). Handle and body sherd; burnt.
+Attic household ware; obvious wheel marks. Bg
+inside, thin in places; reserved outside, except for a
+
+ 
+
+band (W. 0.015) of bg beneath the handle. 6th-5th
+century sc; cf. Agora X11:212-213, pls. 82-84.
+
+2-16. Mortar or Lekane(fig.5.11). Rim sherd; bumnt. D. est.
+0.26. SRM fabric. Later A-earlier C (6th-5th century
+Be); of. Agora XII: no. 1902.
+
+2-17. Mortar? (fig. 5.11). Rim sherd. D. est. 0.48. Coarse
+light reddish-brown fabric; gray core. A-C; cf. Agora
+XII: nos. 1892, 1891.
+
+Other sherds include a bg lekythos base, and LR-Byz
+type ribbed amphora fragments.
+Post-Roman
+
+A handle and body sherds from MByz amphorae;
+several sherds of vitreous green-glazed types character-
+istic of the 19th century Ap (perhaps predating 1821),
+from around the small tower; and a possibly Mod
+stamnos handle.
+
+TERRACOTTA
+
+2-18. Loom Weight (fig. 5.15). Apex and one side of base
+chipped. Sandy red fabric with small inclusions. Tall
+pyramidal with square base; single hole near top.
+Pnyx Type A. Tth-3rd century sc (earlier rather than
+later?); cf. Pnyx I:80, fig. 32, no. 52.
+
+Several fragments of tile may be C.
+
+STONE
+
+2-19. Millstone.Fragment; striated on lower surface. Basal-
+tic andesite; similar in hand-sample to andesite from
+Kimolos or perhaps Nisyros. A-LR?
+
+CHIPPED STONE
+
+66 unretouched artifacts; obsidian (fig. 7.4). Prehistoric
+(BA?); reused later?
+
+3. Akrotirion Sklavos
+
+K85410578; approx. 0.09
+
+(ECyc); MByz
+
+N (1); ECyc 2 (1); A-HL 1; MByz 3+
+BA (5)
+
+Amoderately dense scatter of very eroded and nearly all
+undiagnostic pottery together with an unusually high
+quantity of obsidian on the E slope of a ridge immedi-
+ately W of the S end of the main ridge of the Koressia
+acropolis; the finds are concentrated around and be-
+neath a modern field house and animal pen, approxi-
+mately 150 m from the Koressia-Xyla road. Abandoned
+overgrown terraces with poor visibility. Beneath the
+modem structures are two terrace walls built with large
+
+Gazetteer of Archaeological Sites
+
+blocks, likely broken from an adjacent outcropping and
+not necessarily of great antiquity.
+
+POTTERY
+
+Prehistoric
+
+3-1.  Bowl (fig. 5.1). Rim sherd. Coarse reddish-brown
+micaceous fabric; gray inside. Smoothed outside;
+won inside. Latest N?; cf. J. L. Caskey 1972:A65.
+
+3-2.  Bowlor Jar (fig. 5.1). Rim sherd. CRM fabric. Plain
+broad relief band outside beneath rim. ECyc.
+
+3-3.  Shape Uncertain (fig. 5.1). Lug handle; attached by a
+thrust-through tenon which penetrates the wall. Coarse
+reddish-brownmicaceous fabric, gray in places; traces
+of wiping inside. ECyc.
+
+Archaic to Hellenistic
+
+A wom bg body sherd.
+Byzantine
+
+Fragments of MByz amphorae.
+CHIPPED STONE
+
+5Sunretouched artifacts; obsidian. Crested blade, 2 other
+blades, a blade or flake, and a chip. Prehistoric (BA?).
+
+Off-Site, Near Site 3
+
+Approximately200m SSE, onthe SW, SE, and E slopes
+of a prominent hill in the same ridge, many sherds, a
+little obsidian, and a millstone fragment were noted in
+ill-defined scatters. Finds included bg, combed ware,
+and the following.
+
+POTTERY
+
+0S-1. Closed Shape. Body sherd. Coarse orange mica-
+ceous fabric; gray core. Raised vertical band with
+short parallel horizontal slashes.
+
+0S-2. Pithos. Body sherd. Semi-fine pink fabric. Raised
+bands with herringbone incision: on grounds of
+fabric and details, probably from a pithos with
+noughts-and-crosses pattern. A-C.
+
+STONE
+
+0S-3.  Quern. Porphyritic andesite or rhyodacite; one end
+with all surfaces preserved. Sources throughout the
+Saronic Gulf or in the S. Aegean arc are possible.
+
+CHIPPED STONE
+
+5 unretouched artifacts; obsidian.
+
+73
+
+[end-of-page3]
+
+4. Akrotirion Sklavos
+
+K85350593; approx. 0.2
+A (O
+A4(1);C1;AC3(1); A-HL 4+
+
+A low-density scatter of artifacts on top and on the
+slope of a limestone spur, approximately 750 m S of
+Akrotirion Sklavos; finds are concentrated around an
+animal fold, collapsed field house and threshing floor
+beside the Koressia-Xyla road, and extend downslope
+W and NW as far as amodem limestone quarry (which
+may have destroyed the lower edge of the site).
+
+References: Georgiou and Faraklas 1985: site 14.03.
+POTTERY
+
+Archaic to Classical
+
+4-1.  Tub? (fig. 5.10). Rim sherd with rectangular handle
+scar. CRM; smooth and pale outside; dark core.
+Triangular rim with plain raised band and the im-
+pression of two or three cords beneath it. A-C; cf.
+Agora XII: no. 1847.
+
+4-2.  Lekane (fig. 5.10). Rim sherd; womn. D. est. 0.32.
+Fine light red fabric with voi iscolored gray and
+pink, perhaps in firing. Thick streaky bg on edge of
+rim, and inside. C; cf. Agora XII: no. 1806; Vari: fig.
+9, esp. no. 86.
+
+4-3. Lekane? Handle and body sherd. Fine soft pink
+fabric: Corinthian? Worn horizontal band of glaze
+inside; thin bg outside. A-C?
+
+Other sherds include a high ring base from an A
+lekane; a body sherd from an A skyphos witha base ray
+in reddish-brown bg; and an extremely womn fragment
+of a lekythos base.
+
+CHIPPED STONE
+
+ 
+
+1 unretouched artifact; obsidian. Date uncertain.
+TERRACOTTA
+
+Comer fragment of a tile, not closely datable.
+
+Off-Site, Near Site 4
+
+Closer 1o the sea on the slope of the rounded hill at the
+W side of -Akrotirion Sklavos, a little obsidian was
+found together with sherds datable to historical periods
+(A-R/Byz); this is probably the location of artifacts
+previously noted by R. Catling (personal communica-
+tion).
+
+Background and Data
+
+5. Koressia
+
+K85740616; 0.35
+
+(A); (C); HL; MByz
+
+N (1); ECyc(1); A2; A-HL 2; A-ER 1; C2(1); C-HL
+6(2); C-LR 4; HL 8 (4); MByz 6; T-EMod (1)
+
+BA 16
+
+A moderately dense scatter of artifacts on the SE slope
+of the next hill W of the Koressia acropolis; the finds
+are concentrated around, and downslope from, a thresh-
+ing floor and collapsing field house, and continue to the
+bottom of the slope. The site itself was probably on, or
+near, the saddle at the S end of the streambed which
+runs N past Site 6.
+
+POTTERY
+
+Prehistoric
+
+5-1. Jar (fig. 5.1). Rim sherd. D. est. 0.22. Coarse red-
+dish-brown micaceous fabric; very worn. Diagonal
+lines impressed on rim; incised zigzag outside. Ear-
+lier ECyc?
+
+5-2. Shape Uncertain. Handle, horizontal. Very coarse
+orangish-red micaceous fabric; gray core; lustrous
+dark red coating. Very crudely modeled. Prehistoric
+(latest N?).
+
+Archaic to Roman
+
+53, Lekane or Lekanis (fig. 5.3). Base sherd; very
+womn; burnt? Fine pink to light reddish-brown
+fabric (palerin places) with afew voids; Laconian?
+Thin streaky reddish-brown glaze inside and on
+top of foot; reserved under the foot. 7th-earlier 6th
+century BC.
+
+54. Kantharos (fig. 5.3). Foot; very wom. Attic; bg
+preserved under footand in patches inside. 4th-3rd
+century ¢; cf. Agora XII: nos. 688,701,704, 708,
+7.
+
+5-5.  Fish(?) plate (fig. 5.3). Foot, womn. Glossy bg, thin
+in places, and brown outside; groove reserved with
+miltos. 4th century Bc; cf. Agora XII: nos. 1069,
+1072, 1074, 1075.
+
+56.  S/TAmphora (fig.5.5). Rim fragment. Pinkish sandy
+fabric, slightly micaceous with large voids; self-
+slipped outside? 4th-3rd century sc?
+
+5-7.  SIT Amphora (fig. 5.5). Rim sherd. D. est. 0.11.
+Coarse sandy micaceous fabric; light reddish-brown
+fabric; gray in places and slightly paler outside.
+4th-3rd century BC?; cf. Vari: no. 124;
+J. K. Anderson 1954:172, 278,
+
+58.  SIT Amphora (fig. 5.6). Toe; bumnt. CRM; gray
+core. Late 4th-3rd century &c.
+
+59.  S/ITAmphora. Toe. Coarse reddish fabric with small
+
+74
+
+5-10.
+
+5-11.
+
+5-12.
+
+5-13.
+
+5-14.
+5-15.
+
+5-16.
+
+5-17.
+
+5-19.
+
+5-20.
+
+521.
+
+522,
+
+5-25.
+
+o Gazetteerof Archaeological Sites
+
+and medium-sized red and white inclusions; slightly
+redder outside. Later 4th-3rd century sc.
+
+Amphora (fig. 5.4). Rim and part of handle. D. est.
+0.10. Sandy red fabric with small white and dark
+inclusions. HL.
+
+Hydria or Amphora (fig. 5.4). Rim sherd. D. est
+0.20. Coarse Corinthian fabric; pink with gray core.
+A; cf. Corinth VI1.2: pl. 110, two lower left rows,
+and nos. An 314, An 288-305.
+
+Water Jug (fig. 5.7). Rim sherd. D. est 0.08. Coarse
+sandy micaceous reddish-yellow fabric; darker core.
+Late 4th-3rd century 8c; cf. H. A. Thompson 1934:
+nos. AS3, B39; Corinth VIL3: no. 631; Vari: nos.
+67, 68; Braun 1970: no. 23, pl. 54.
+
+Closed Vessel (fig. 5.7). Base sherd; bumt. SRM;
+gray core. 3rd century BC; cf. Corinth VIL3: no.
+630.
+
+Closed (?) Vessel (fig. 5.7). Base sherd; very wom.
+D. est. 0.14. SRM; gray core. 3rd century sc?
+Beehive? (fig. 5.9). Rim sherd. CRM; gray core. 3rd
+century Bc?
+
+Beehive (fig. 5.9). Rim sherd; angle uncertain. CRM.
+Inside, horizontal combing beneath rim, crossed by
+vertical combing. C-LR.
+
+Beehive (fig. 5.9). Rim sherd. D. est 0.24. Hard
+SRM; gray core. Inside, combed parallel 1o the rim
+and diagonally. C-LR.
+
+Beehive (fig. 5.10). Base sherd. CRM: gray core.
+Inside, radial and intersecting concentric combing;
+combed lines in groups approx. 0.028 W. Late C-
+early HL?: cf. Vari: no. 150, pp. 392-393.
+Beehive (fig. 5.10). Fragment of a lid; bumt. SRM;
+gray core. Dark slip outside? Inside, combed (?)
+intersecting arcs. Late C—early HL?
+
+Lekane (fig. 5.10). Part of rim and one handle;
+worn. Coarse brittle sandy fabric with a few inclu-
+sions; orange outside; gray core. Perhaps slipped or
+glazed red outside. Round handle nearly touches
+the lip. C; cf. Agora XlI:nos. 1793, 1805, 1806,
+1820; Dema: no. 47, p. 94.
+
+Lekane (fig. 5.11). Rim sherd. D. est. 0.28. CRM;
+gray core; medium to large inclusions. Late 4th~
+mid 2nd century Bc; cf. H. A. Thompson 1934: fig.
+122, esp. A60,C61.
+
+Lekane (fig. 5.11). Rim sherd. Sandy fabric; slightly
+micaceous? Reddish outside; gray core. 3rd-2nd
+century 8C: cf. H. A. Thompson 1934: fig. 122,
+A59, B41,C67.
+
+Bowl (fig. 5.12). Rim sherd; very worn. Sandy light
+reddish-brown micaceous fabric, C-HL?
+
+Morrar (fig. 5.11). Rim sherd. D. est. 0.26. Coarse
+Corinthian fabric. Later 4th-3rd century be; cf.
+Corinth VI1.3: nos. 625-627; Vari: 387, no. 94.
+Casserole (fig. 5.12). Handle and rim sherd; burnt.
+
+ 
+
+  
+
+ 
+
+SRM. (C?)-HL.
+
+5-26. Lamp (fig. 5.12). Base sherd; bumt (not from use).
+Fine Attic; thick brownish bg inside; reserved out-
+side. Ca.425-350 sc; Howland Type 24 A prime or
+C prime.
+
+5-27.  Lamp (fig. 5.12). Base sherd; very worn. Fine Attic;
+no bg preserved. 4th-3rd century sc; Howland Type
+25.
+
+5-28. Lamp (fig. 5.12). Base sherd. Fine Attic; traces of
+dull bg inside but not out. 4th-3rd century BC;
+Howland Type 25, A, B, C, or D prime.
+
+Post-Roman
+
+Handle and body sherds from MByz amphorae and a
+
+stamnos handle of more recent date.
+
+Date Uncertain
+
+5-29. Bowl(fig.5.12). Rim sherd. D. est0.24. Brown semi
+coarse micaceous fabric, a bit darker on top of rim
+and outside; gray core. HL? or Recent?
+
+TERRACOTTA
+
+5-30. Loam Weight (fig. 5.15). Top and one comner miss-
+ing; worn. Sandy light red micaceous fabric. Pyrami-
+dal; one hole near top; Pnyx Type A or B. A-early
+HL (C?); cf. Pnyx I:80, fig. 32, nos. 52, 4, and p. 82,
+10p tWO Tows.
+
+A fragment of a glazed tile (A-HL).
+
+CHIPPED STONE
+
+16 unretouched artifacts; obsidian. BA.
+
+Off-Site, Near Site 5
+
+Artifacts were observed on the NE slope of the hill and
+
+inthe upper partof the streambed itself, outside the main
+
+concentration. They include the following.
+
+TERRACOTTA
+
+0S-4. Spindle Whorl. Intact. D. 0.04, H. 0.02, D. hole
+0.006. Semi-fine light brown fabric with many burnt-
+outorganic inclusions. Conical with central perfora-
+tion.
+
+75
+
+[end-of-page4]
+
+61. Perlevos
+
+K89440843; approx. 0.24
+
+MCyc-LCyc IT
+
+ECyc (2): MCyc (2); MCyc-LCyc 1 6; BA 22 (9+); G-
+A@2pAC2:C(3)
+
+Moderately dense scatter of artifacts around two mod-
+em goat pens, on S slope of the mainridge between Ayia
+Irini and Perlevos, just beneath its crest.
+
+References: Georgiou and Faraklas 1985: site 16.04.
+POTTERY
+
+Prehistoric
+
+61-1.  Keftiu Cup? (fig. 5.1). Three Jjoining body sherds;
+base of a strap handle. Coarse brown fabric; darker
+gray at surface. MCyc-LCyc 1I?
+
+61-2. Bowl?(fig.6.3). Body sherd. Very coarse orange red
+mklcms fabric; gray core; traces of black coating
+inside. Horizontal relief band of small overlapping
+disks outside. ECyc?
+
+61-3.  Cooking Vessel(fig. 5.1). Leg; brokenatend. Coarse
+orange red micaceous fabric; burnt. MCyc-LCycllL.
+
+61-4.  Closed Vessel (fig. 5.1). Two Joining sherds from
+s_honlder. Pale brown semi-fine soft fabric; decora-
+tion in black matt paint. Wheelmade. Low neck
+ledge (applied), thin encircling band below, with
+adjoining wavy band. Nonlocal (south Cycladic?).
+MCyc-LCyc IL.
+
+61-5.  Pithos (fig. 5.2). Rim sherd. D. est. 0.36, Coarse
+orange red soft micaceous fabric; darker red at
+surface. BA?
+
+61-6.  Pithos. Body sherd. Coarse reddish-orange mica-
+ceous fabric; gray core; slightly lustrous surface
+outside. Pants of three horizontal relief bands of
+small overlapping disks. BA.
+
+61-7.  Pithos. Body sherd. CRM fabric; gray core. Two
+plnlldLCyc leliszn:dswhhwuiw’ngdisksM%
+
+61-8.  Closed Vessel. Body sherd. Coarse deep red mica-
+ceous fabric; prominent wiping/scraping marks in-
+side. Wide (0.035) relief horizontal band outside
+with vertical thumbystick impressions. ECyc?
+
+619.  Tray or Lid? (fig. 5.2). D. est. 0.16. Prehistoric?
+
+61-10. Shape Uncertain (fig. 5.2). Rim sherd; orientation
+uncertain. Coarse orange to reddish-yellow fabric;
+bla_ck, at surface inside and out. Very wom. Prehis-
+toric?
+
+61-11. f:nape Uncertain. Body sherd. Fabric as 61-10.
+
+lorizontal relief band of overlapping di -
+Loyen lapping disks. MCyc-
+
+  
+
+Background and Data _—
+
+Uncataloged sherds include a semi-fine red burnished
+sher_d (MCyc?); three wheelmade bases, possibly from
+conical cups (MCyc-LCyc); burnished body sherds,
+probably from pithoi; a handle, thumb impressed at the
+base (MCyc?); other bumished sherds, probably pre-
+LCyc;small flatpithosrims; pithos fragments with relief
+ba_ndsof overlappingdisks (MCyc-LCyc 1) abowl rim
+with a broad slashed relief band; a body sherd from a
+closed vessel with a ledge at the neck: and a jug base,
+
+Archaic to Classical
+
+61-12. Jar (fig. 5.7). Rim sherd. D. est. 0.18. Very coarse
+orange fabric; dark core. A-C.
+
+61-13. Lekane(fig.5.11). Rimandbody sherds. D. est. 0.40,
+Attic coarse household ware; wheel marks preserved
+inside. Inside, bg, thin in places; rim and outside
+reserved except for a dark band low on the body. A~
+C (Sthcentury 8c?); cf. Agora XII: nos. 1822-1834,
+
+Date Uncertain
+
+61-14. Disk (Pithos Lid?) (fig. 5.9). Rim sherd. D. est.
+0.40-0.50. CRM; gray core. Thick flat disk, thick-
+ening 1o a rounded rim; rim defined inside and out
+by agroove, with a ring of shallow punched holes on
+one side. G-A?
+
+61-15. Disk (Pithos Lid?) (fig. 5.9). Rim and one surface;
+very crumbly. D. est. 0.40-0.50. CRM; black core;
+very underfired. Form like 61-14, with concentric
+incised and punched bands on the preserved surface:
+concentric incised bands border a flat band in which
+pairs of diagonal incisions define wedge-shaped
+segments; within, two bands of imegularly spaced
+punched holes, more widely spaced than those in the
+outer band. G-A?
+
+UnclmlopddmdsinclndnfngmmtofC(?)cooking
+ware, similar to Aiginetan, and an ampiiora handle,
+closely datable. - o
+
+CHIPPED STONE
+
+ 
+
+4 unretouched artifacts; obsidian.
+TERRACOTTA
+
+1 fragment of tile, not closely datable.
+
+Off-Site, Near Site 61
+
+Scanty traces of antiquities were observed at several
+other locations on and around the Perlevos Peninsula:
+
+1. At the NE side of the small headland that closes the
+E.end of the small bay immediately E of Glaronisi, a few
+pieces of obsidian and pottery (the latter all coarse body
+120
+
+Gazetteer of Archaeological Sites
+
+sherds); near the crest of the headland, a sherd with a
+diagonally slashed raised band.
+
+2. On the summit of the ridge that forms the Perlevos
+Peninsula itself, a collapsed structure with traces of
+circular walling, approximately 6 m deep: no associated
+poitery.
+
+3. Nearer the bay of Otzias, on top of a rock outcrop-
+ping, approximately 450m NE of Site 61,apile of debris
+(perhaps a collapsed structure), with no associated
+pottery. These remains are to be associated with the
+various finds reported by Georgiou and Faraklas (1985:
+site 16.02).
+
+62. Otzias
+
+K89480814; approx. 1.3
+
+(HL); ER; LR; MByz
+
+A-HL 5+ C(1); C-HL 3; C-LR 124; HL 1 (4); HL-ER
+3; HL-R 1; ER 4; LR 9; R 9+ (1); R-Byz 1; MByz
+3+ (1); Byz-Mod 1; Mod 2 (1)
+
+Very dense scatter of artifacts including a fragment of a
+quem, on the slopes, primarily SW, of a prominent hill
+next to the dirt road from Otzias to Perlevos; approxi-
+mately 330 m W of Otzias bay, around a modem goat
+pen and threshing floor at the top of the hill, and
+continuing SW to the bottom of the rema.' Abandoned
+overgrown terraces with good visibility. SW of the goat
+pen, approximately 20m, aretwo very large schist slabs,
+possibly belonging to a grave, one apparently covering
+a cavity beneath it, the other obviously not in situ.
+
+References: Georgiou and Faraklas 1985: site 16.06.
+POTTERY
+
+Archaic to Roman
+
+62-1.  Open(?)Shape.Flatdisk foot. Fine hard pink fabric.
+Brown glaze, thick inside, thinner and splotchy
+outside; dipped. HL?
+
+62-2.  S/TAmphora(fig.5.5). Rimsherd. D.est.0.10. Low-
+fired dark reddish-brown fabric; greenish-gray slip
+inside and out. HL-ER (Coan; Ist century c-lst
+century AD?).
+
+62-3.  SIT Amphora(fig. 5.4). Rim sherd; very wom inside
+and out; attachment for a round handle. D. est. 0.09.
+Semi-coarse reddish-orange micaceous fabric; very
+sandy; wheelmade. C-HL..
+
+624. Beehive (fig. 5.9). Rim sherd. Gritty semi-coarse
+fabric; bright reddish-orange outside; dark red to
+gray core. Inside, traces of horizontal combing be-
+
+ 
+
+neath rim. C-LR.
+
+62-5. Beehive (fig. 5.9). Rim sherd. D. est. 0.20. SRM
+fabric; dark core. Horizontal combing inside. C-LR.
+
+62-6.  Beehive (fig. 5.9). Rim sherd. D. est. 0.24. Semi-
+coarse dark reddish-brown fabric, variable in color.
+Dark gray slip outside. Horizontal combing inside.
+C-LR.
+
+62-7. Lekane (fig. 5.11). Rim sherd. D. est. 0.30. Hard
+sandy micaceous reddish-yellow fabric. HL?
+
+62-8.  Echinus(?)Bowl(fig.5.12). Rimsherd. D. est. 0.18.
+Coarse dark gray fabric; dark reddish-brown out-
+side. HL?
+
+62-9. Skiller (fig. 5.13). Handle; thumb impression at
+attachment to pan; broken at other end. Semi-coarse
+reddish-gray fabric; many quartz inclusions. Sur-
+faces rough. (1st century ¢?-) Ist century AD,
+
+62-10. Bowl (fig. 5.13). Rim sherd. Candarli ware? Late 1st
+century AD?
+
+62-11. Hayes Form 67. Rim sherd. D. est. 0.24. Semi-fine
+light brown fabric; prominent quartz inclusions.
+ARS; incised groove just inside rim. Late 4th century
+AD.
+
+62-12. Hayes Form 82 (fig. 5.13). Rim sherd; womn inside.
+D. est. 0.30. ARS. 5th century Ap.
+
+62-13. Bowi? (fig.5.13). Rimsherd. D.est. 0.10. Semi-fine
+very lightred fabric. Slipped lustrous lightred inside
+and out. Incised band outside beneath rim. LR.
+
+Among uncataloged sherds are a C-HL amphora toe;
+
+an HL (?) lekane rim; an HL bg echinus bowl rim; an
+
+HL echinus-bow! fragment; various other bg sherds; a
+
+"~HL Corinthian amphora handle; a scrap of Italian
+
+(?) Terra Sigillata (st century Ap); various LR fine
+
+wares, including ARS Hayes Form 59/67 (4th century)
+
+and PRS Hayes Forms 3 and 3B; LR amphora frag-
+ments, including wheel-ridged combed ware of early
+
+type; Peacock and Williams Class 43 combed ware; a
+
+centrally grooved amphora handle (1st-4th century
+
+AD), a North African amphora body sherd of R date;
+
+and many bechive fragments.
+
+Post-Roman
+
+Among MByz sherds are fragments of combed
+amphorae. A sherd with a whitish-yellow slip may be
+R or Byz. Other sherds, a large strap handle and a body
+sherd with fine combing, are likely Byz-Mod or Mod;
+several are certainly Mod.
+
+Date Uncertain
+
+62-14. Plate? (fig. 5.14). Rim sherd. D. est. 0.30. Semi
+coarse very hard light reddish-brown micaceous
+fabric with many quartz inclusions; wheelmade.
+
+62-15. SIT Amphora (fig. 5.14). Base sherd. D. est. 0.11.
+
+121
+
+[end-of-page5]
+
+Backgrous
+
+-
+
+Post-Roman
+
+  
+ 
+
+71-8. Bowl/Lekane (figs. , 18.1). Body sherd from
+
+near the base. Semi-fine soft orangish-red fabric.
+vitreous brown glaze with painted
+ale yellow? Byz slip-painted technique.
+MByz (12th-13th century Ap).
+
+ 
+ 
+ 
+
+Uncataloged sherdsinclude MByzamphora fragments;
+two sherds with yellowish-white glaze, perhaps MByz;
+and a fragment of a Mod stamnos.
+
+Date Uncertain
+
+Rim sherd. D. est. 0.20.
+ray core; wheelmade.
+
+71-9.  Open Shape (fig. 5.14).
+Semi-fine orange fabric;
+
+ 
+
+ 
+
+TERRACOTTA
+71-10. Loom Weight. Pyramidal. Later C-HL.
+One fragment of A-HL (?) Corinthian tile.
+
+ 
+
+nd and Data -—
+
+Off-Site, Near Site 71
+
+On the slopes of the Kambanariotissa ridge, approxi-
+mately 250 m N of the church, a single sherd was
+collected.
+POTTERY
+0S-47. Shape Uncertain. Body sherd. Semi-coarse dark
+
+red/mauve micaceous fabric. Incised with fine hori-
+zontal lines. Mod.
+
+Off-Site, Uncertain Provenance
+
+The findspots of two sherds are not totally clear.
+0S-48. Pithos (fig. 5.8). Body sherd. Coarse reddish-brown
+fabric with a darker reddish-gray surface; gray core.
+Raised horizontal band with incised and impressed
+noughts-and-crosses pattern. Probably found near
+Site 50.
+
+0S-49. Lekane(fig.5.10). Rimsherd. D.est. 0.30. Semi-fine
+
+orangish-red micaceous fabric.
+
+  
+
+  
+
+ 
+
+Figure 5.1. (a) Neolithic and Early Bronze Age pottery; (b) Middle Cycladic through Late Cycladic II pottery.
+129
+
+[end-of-page6]
+

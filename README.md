@@ -65,7 +65,8 @@ The tools in this repo have been tested on Mac with a local installation of Pyth
 >>> from PIL import Image
 >>> import pytesseract
 ```
-4) define a variable `string` and assign to it an output of the `image_to_string()` function:
+4) define a  `string` variable and assign to it an output of the `image_to_string()` function. (You have to be in the directory where "test-image.png" is located.)
+
 ```python
 string = pytesseract.image_to_string(Image.open(“test-image.png”), lang=”eng”)
 ```
@@ -76,17 +77,121 @@ string = pytesseract.image_to_string(Image.open(“test-image.png”), lang=”e
 It works very well with Czech texts as well. There are many apps relying on tesseract, like [Ancient Greek OCR app](https://ancientgreekocr.org). Always you have firstly install the language by running:
 `$ sudo port install tesseract-grc`
 
-### Convert PDF to text in python
-(based on [this](https://www.youtube.com/watch?v=pf7OONW7l54) tutorial.)
+Perhaps the most efficient way to work with pdfs within python is to use mupdf and pymupdf. 
+
+### MuPdf
+
+But this is based on images. So I was looking for a straightforward solution to work with pdfs. I was especially interested in extracting pdf pages into computer vision readable objects used by `cv2` library, what would enable me to do some additional transformations Therefore I turned to PyMuPdf, based on MuPdf (following [this](https://stackoverflow.com/questions/53059007/python-opencv) thread). First, you have to install MuPDF [docs](https://mupdf.com/docs/index.html).  From bash, you can install it using `brew`. In my case I first had to install xquartz however:
+
+You can either install it straightforwardly:
 
 ```bash
-$ pip3 install wand
+$ pip3 install pymupdf
 ```
-`wand` is a `ctypes`-based simple ImageMagick binding for Python - [docs](http://docs.wand-py.org).
- To work with wand, you must have ImageMagick installed as well:
- ```bash
- $ brew install freetype imagemagick
- ```
+
+Or you can firstly install MuPDF as I did:
+
+```bash
+$ brew cask install xquartz
+```
+
+and then, I was finally able to run:
+
+```bash
+$ brew install mupdf
+```
+
+I got it here: `/usr/local/Cellar/mupdf`
+
+### PyMuPDF
+
+(All the code below is from jupyter notebook `scripts/pdf-and-image-preprocessing.ipynb`).
+
+PyMuPDF has a very intuitive usage (see the [tutorial](https://pymupdf.readthedocs.io/en/latest/tutorial/)). To read a pdf, you run just:
+
+```python
+doc = fitz.open("data/test-cyr.pdf") ### open the pdf
+```
+
+Then you can easily iterate over pages and do anything you wish (look for annotations, links, etcs.). 
+
+The most important thing for us is to render images into a `Pixmap` object. Pixmap object is a RGB image of a page. As the documentation says, "[m]ethod [`Page.getPixmap()`](https://pymupdf.readthedocs.io/en/latest/page/#Page.getPixmap "Page.getPixmap") offers lots of variations for controlling the image: resolution, colorspace (e.g. to produce a grayscale image or an image with a subtractive color scheme), transparency, rotation, mirroring, shifting, shearing, etc."
+
+```python
+for page in doc:
+	pix = page.getPixmap(colorspace = "GRAY") # try "csGRAY"
+```
+
+There are very nice [recipes](https://pymupdf.readthedocs.io/en/latest/faq/) for this procedure. For instance, to get a better resolution, you can use matrix parameter and so to say to "zoom in".
+
+To really test different parametrizations of getPicxmap, I produced 5 images of the same area from a third page of a pdf `doc`.  I also defined a function called `rect` to capture a rectangle area of my interest defined by a list of ratio values: `[start height, end height, start width, end width]`.
+
+```python
+def rect(img,rect):
+    '''return rectangle defined by side ratio'''
+    h = img.shape[0]
+    w = img.shape[1]
+    return img[int(h * rect[0]):int((h * rect[1])), int(w * rect[2]):int((w * rect[3]))]
+
+test_img = doc[2] ### select the page
+test_imgs = [] 
+test_imgs.append(pix2np(test_img.getPixmap()))
+test_imgs.append(pix2np(test_img.getPixmap(colorspace="csGRAY")))
+test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(2, 2))))
+test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(2, 2), colorspace="csGRAY")))
+test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(3, 3), colorspace="csGRAY")))
+
+test_imgs = [rect(img, [0.07, 0.57, 0.5, 1]) for img in test_imgs] # defined the area
+```
+
+Already a very preliminary look at these output indicates that **zooming** actually means a lot of improvement. A zoom with matrix = (2,2) appears to produce the best results.
+
+### Morphiological transformations with CV2.
+
+Subsequently, I tested some basic [morphological transformations](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html), namely **Erosion** , **Dilation**, and **Closing**.
+
+So I have the image extracted from the pdf with these parameters:
+
+```python
+img = test_imgs.append(pix2np(test_img.getPixmap(matrix = fitz.Matrix(3, 3), colorspace="csGRAY")))
+```
+
+Finally, I produced four variants of this image while employing the above mentioned transformations and on each of them applied the  `pytesseract.image_to_string(img, lang="bul")` method. 
+
+```python
+img = test_imgs[3]
+
+imgs_transf = []
+# ORIG IMG
+imgs_transf.append(img)
+# DILATION
+kernel = np.ones((1, 1), np.uint8)
+img_dil = cv2.dilate(img, kernel, iterations=1)
+imgs_transf.append(img_dil)
+# EROSION
+kernel = np.ones((2, 2), np.uint8)
+img_er = cv2.erode(img, kernel, iterations=1)
+imgs_transf.append(img_er)
+# CLOSING
+kernel = np.ones((1, 1), np.uint8)
+img_clo = closing = cv2.morphologyEx(img, cv2.MORPH_CLOSE, kernel)
+imgs_transf.append(img_clo)
+
+fig, axs = plt.subplots(4, 2, figsize=(15,20), tight_layout=True)
+
+for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosion", "closing"]):
+    ax_pair[0].imshow(img)
+    ax_pair[0].axis("off")
+    ax_pair[0].set_title(title)
+    txt = pytesseract.image_to_string(img, lang="bul")
+    ax_pair[1].text(0, 0, txt, fontsize=12) 
+    ax_pair[1].axis("off")
+```
+
+
+![](hhttps://sciencedata.dk/shared/10bf6b65c3fb544099bb78b1cc226406?download)
+
+
 
 A complete python script for straightforward production of texts:
 
@@ -132,13 +237,6 @@ Second, you can run the same script file as above, i.e. `pdf3text.py`. As the sc
 * path and name for the output file
 
 In the example above, I was reading pdf files using `Image()` function from `wand.image` module.
-```python
-pdf = wi(filename = "data/test-cyr_p4.pdf", resolution=300)
-```
-I was experimenting with resolution, comparing 100, 200, 300, and 600, but have not seen any difference. 
-
-Working on this I actually realize that I want to try a different tool for working with pdfs. This brought me to PyMuPDF.
-
 
 ### MuPdf & PyMuPdf
 The main motivation was to make straightforward move from pdfs to computer vision readable objects used by `cv2` library, what would enable me to do some additional transformations. The original script above, using wand, was perhaps not the best solution for this purpose (as a binding of ImageMagick, the python package is not so much documented). Therefore I turned to PyMuPdf, based on MuPdf (following [this](https://stackoverflow.com/questions/53059007/python-opencv) thread).
@@ -241,6 +339,75 @@ for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosi
 
 ![](hhttps://sciencedata.dk/shared/10bf6b65c3fb544099bb78b1cc226406?download)
 
+### A simple script
+
+All the stuff above might be combined into one handy script. You just have to correctly navigate your cmd to the script above and then to an pdf file you want to analyze, specify the language of the pdf and name of the output. 
+
+Once you are in the `OCR` repo main directory. You can just run:
+
+```$ python3  
+~OCR $ scripts/pdf-to-txt.py
+```
+
+To navigate to a file in the `data` subdirectory, the path is like here:
+
+`data/test-pdf.pdf`
+
+The whole code in the `pdf-to-txt.py` file is here: 
+
+```python
+### binding for tesseract:
+import pytesseract
+### computer vision:
+import cv2
+### computer vision relies to a substantial extent on numpy arrays
+import numpy as np
+### PyMuPDF is called fitz:
+import fitz
+### to plot pages and everything else:
+from datetime import datetime
+### configure sddk session
+
+### CRUCIAL FUNCTIONS
+def pix2np(pix):
+    im = np.frombuffer(pix.samples, dtype=np.uint8).reshape(pix.h, pix.w, pix.n)
+    #im = np.ascontiguousarray(im[..., [2, 1, 0]])  # rgb to bgr
+    return im
+
+def get_text(doc):
+        i = 1
+        pages = ""
+        for page in doc: ### or you can specify: doc(start, end, step):
+            pix = page.getPixmap(matrix = fitz.Matrix(2, 2), colorspace="csGRAY")  # try "csGRAY"
+            img = pix2np(pix)
+            kernel = np.ones((2, 2), np.uint8)
+            img_er = cv2.erode(img, kernel, iterations=1)
+            txt = pytesseract.image_to_string(img_er, lang=language) + "\n\n[end-of-page" + str(i) + "]\n\n"
+            pages += txt 
+            i = i+1
+        return pages
+
+inputfile = input("file for ocr: ")
+try:
+    doc = fitz.open(inputfile)
+except:
+    print("reading of the file failed, have you correctly specified its relative path from here? Try again:")
+    inputfile = input("file for ocr: ")
+    doc = fitz.open(inputfile)
+
+language = input("specify language of the pdf (use '+' for more languages): ")
+
+print(datetime.now(), "ocr analysis started")
+pages_str = get_text(doc)
+
+outputfile = input("specify name of the output file: ")
+
+### SAVE THE FILE
+file = open(outputfile,"w")
+file.write(pages_str)
+print(datetime.now(), "ocr analysis ended and the output file was saved.")
+```
+
 
 
 ### OCR with Tesseract using Google Cloud Compute Engine
@@ -335,7 +502,9 @@ $ pip3 install opencv-python
 To make it functional, you also need:
 
 ```bash
-$ sudo apt-get install -y libsm6 libxext6 libxrender-dev
+$ sudo apt-get install -y libsm6
+$ sudo apt-get install -y libxext6
+$ sudo apt-get install -y libxrender-dev
 ```
 
 6) Beautiful Soup 
