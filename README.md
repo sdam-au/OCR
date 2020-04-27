@@ -189,55 +189,6 @@ for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosi
 ```
 
 
-![](hhttps://sciencedata.dk/shared/10bf6b65c3fb544099bb78b1cc226406?download)
-
-
-
-A complete python script for straightforward production of texts:
-
-```python
-### REQUIREMENTS
-import io # navigating files
-from PIL import Image 
-import pytesseract
-from wand.image import Image as wi # working with PDFs and images
-
-### READ PDF FILE AS JPEG
-pdf = wi(filename = input('input filename: '), resolution = 300)
-pdfImg = pdf.convert('jpeg')
-### TRANSFORM IT TO IMAGES 
-imgBlobs = []
-for img in pdfImg.sequence:
-	page = wi(image = img)
-	imgBlobs.append(page.make_blob('jpeg'))
-
-### EXTRACT TEXT FROM THE IMAGES
-language = input("language code (e.g. 'eng':" )
-extracted_text = []
-i = 1
-for imgBlob in imgBlobs:
-	im = Image.open(io.BytesIO(imgBlob))
-	text = pytesseract.image_to_string(im, lang = language)
-	extracted_text.append(text + " [end-of-page" + str(i) + "]")
-	i += 1
-
-### SAVE THE FILE
-file = open(input("output filename: "),"w")
-file.write(" ".join(extracted_text))
-```
-### Testing Tesseract with Cyrilic
-
-First, you have have to install the language:
-```bash
-$ sudo port install tesseract-bul
-```
-Second, you can run the same script file as above, i.e. `pdf3text.py`. As the script proceeds, it asks you to specify three things:
-* path and name of the input pdf file
-* language of the pdf
-* path and name for the output file
-
-In the example above, I was reading pdf files using `Image()` function from `wand.image` module.
-
 ### MuPdf & PyMuPdf
 The main motivation was to make straightforward move from pdfs to computer vision readable objects used by `cv2` library, what would enable me to do some additional transformations. The original script above, using wand, was perhaps not the best solution for this purpose (as a binding of ImageMagick, the python package is not so much documented). Therefore I turned to PyMuPdf, based on MuPdf (following [this](https://stackoverflow.com/questions/53059007/python-opencv) thread).
 First, you have to install MuPDF [docs](https://mupdf.com/docs/index.html).  From bash, you can install it using `brew`. In my case I first had to install xquartz however:
