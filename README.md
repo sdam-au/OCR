@@ -81,7 +81,9 @@ Perhaps the most efficient way to work with pdfs within python is to use mupdf a
 
 ### MuPdf
 
-But this is based on images. So I was looking for a straightforward solution to work with pdfs. I was especially interested in extracting pdf pages into computer vision readable objects used by `cv2` library, what would enable me to do some additional transformations Therefore I turned to PyMuPdf, based on MuPdf (following [this](https://stackoverflow.com/questions/53059007/python-opencv) thread). First, you have to install MuPDF [docs](https://mupdf.com/docs/index.html).  From bash, you can install it using `brew`. In my case I first had to install xquartz however:
+But this is based on images. So I was looking for a straightforward solution to work with pdfs. I was especially interested in extracting pdf pages into computer vision readable objects used by `cv2` library, what would enable me to do some additional transformations Therefore I turned to PyMuPdf, based on MuPdf (following [this](https://stackoverflow.com/questions/53059007/python-opencv) thread). First, you have to install MuPDF [docs](https://mupdf.com/docs/index.html).  From bash, you can install it using `brew`. In Linux, you need to follow the same course of installing MuPDF and then PyMuPDF, and to make the process smoother, see instructions below this Mac section. 
+
+In my case I first had to install xquartz however:
 
 You can either install it straightforwardly:
 
@@ -102,6 +104,50 @@ $ brew install mupdf
 ```
 
 I got it here: `/usr/local/Cellar/mupdf`
+
+### MuPDF and PyMuPDF on Ubuntu 18.04 for users who use Linux occasionally
+
+Installation of MyPdf and PyMuPDF on Ubuntu 18.04 can be a tad entailed if you have different versions of Python and do not update your system very often. You may be getting errors (e.g. [pip3 install pymupdf failure](https://github.com/pymupdf/PyMuPDF/issues/414) or [others](https://github.com/pymupdf/PyMuPDF/issues/95)),when installing these prerequisites. In order to avoid problems, let's start with system update:
+
+```bash
+$ sudo apt-get update
+```
+Then you can install the MuPdf 
+```bash
+$ sudo apt-get install mupdf mupdf-tools
+```
+My terminal was happy after running these, and a diagnostic ls revealed mupdf library in place
+```bash
+$ ls /usr/lib/mupdf/mupdf* -1
+> /usr/lib/mupdf/mupdf-x11
+```
+
+Thereafter, you should theoretically be able to install Python bindings for MuPDF by using a single pip3 install command. This method is called Python wheels and should be self-contained, i.e. you should not need any other software to download or install MuPDF to run PyMuPDF scripts. The command goes to Github, grabs the most recent version of the binaries (or the one you indicate with ==) unpacks and installs it. It works on most 64-bit Linux platforms with Python versions 2.7 through 3.8. The catch is : you may have multiple versions of Python and your pip3 command may be out of date. So before pip3 install, it's good to check what versions of Python you have ...
+
+
+```bash
+$ ls /usr/lib/python
+> python2.7/ python3/   python3.6/ python3.7/ python3.8/ 
+```
+
+Ok, I have a bunch of Python versions, which is fine as long as the latest 3.7 and 3.8 are there. Pip3 should get the installation job done as long as you update it first
+
+```bash
+$ pip3 install --upgrade pip
+Collecting pip
+ Downloading https://files.pythonhosted.org/packages/54/2e/df11ea7e23e7e761d484ed3740285a34e38548cf2bad2bed3dd5768ec8b9/pip-20.1-py2.py3-none-any.whl (1.5MB)
+    100% |████████████████████████████████| 1.5MB 1.1MB/s 
+Installing collected packages: pip
+Successfully installed pip-20.1
+```
+And now, nothing is in the way of installing PyMuPDF. I have selected the most recent version from the [releases page](https://github.com/pymupdf/PyMuPDF/releases), after I verified it fit my system, but pip3 will do that for you 
+
+```bash
+$ pip3 install PyMuPDF==1.16.18
+Installing collected packages: PyMuPDF
+Successfully installed PyMuPDF-1.16.18
+```
+Bingo! You are ready to move on to real work now.
 
 ### PyMuPDF
 
@@ -247,7 +293,7 @@ test_imgs = [rect(img, [0.07, 0.57, 0.5, 1]) for img in test_imgs] # defined the
 ```
 Already a very preliminary look at these output indicates that **zooming** actually means a lot of improvement. A zoom with matrix = (2,2) appears to produce the best results.
 
-### Morphiological transformations with CV2.
+### Morphological transformations with CV2.
 
 Subsequently, I tested some basic [morphological transformations](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html), namely **Erosion** , **Dilation**, and **Closing**.
 
@@ -294,15 +340,17 @@ for img, ax_pair, title in zip(imgs_transf, axs, ["original", "dilation", "erosi
 
 All the stuff above might be combined into one handy script. You just have to correctly navigate your cmd to the script above and then to an pdf file you want to analyze, specify the language of the pdf and name of the output. 
 
-Once you are in the `OCR` repo main directory. You can just run:
+Once you are in the `OCR` repo main directory. You can run the script by copying the following line into your terminal:
 
-```$ python3  
-~OCR $ scripts/pdf-to-txt.py
+```bash 
+$ python3 scripts/pdf-to-txt.py
 ```
 
-To navigate to a file in the `data` subdirectory, the path is like here:
+You will be prompted to provide a path to file. In this case, navigate to a file in the `data` subdirectory, the path is like here:
 
 `data/test-pdf.pdf`
+
+Next prompt will ask about language of the text. Here you need to know the appropriate language abbreviations or else your script will error out. In this case, the text is in English, so you type in 'eng'.
 
 The whole code in the `pdf-to-txt.py` file is here: 
 
