@@ -30,7 +30,7 @@ def get_text(doc):
         i = i+1
     return pages
 
-inputfile = input("file for ocr: ")
+inputfile = input("file for ocr: ") # (works interactively)
 try:
     doc = fitz.open(inputfile)
 except:
