@@ -1,7 +1,7 @@
 ### REQUIREMENTS
 import io # navigating files
 from PIL import Image 
-import pytesseract
+import pytesseract # requires a complex installation
 from wand.image import Image as wi # working with PDFs and images
 
 ### ARGUMENTS
